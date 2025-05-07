@@ -1,17 +1,21 @@
 # Tweet_Prediction_Task
-This project aims to create the largest ground truth fake news analysis dataset for real and fake news content in relation to social media posts. Below illustrates the major contributions of the TruthSeeker dataset to the current fake news dataset landscape:
+This project focuses on building a robust fake news detection system by leveraging social media content. It introduces the TruthSeeker dataset, which aims to be one of the most comprehensive ground truth datasets for identifying real and fake news in social media posts.
 
-##  Collecting data
-I collected the Data from the Truth Sick site. The data set contains three databases. I took the database for training the machine learning models
+##  📥 Data Collection
+The data was sourced from the [https://www.unb.ca/cic/datasets/truthseeker-2023.html](Canadian Institute) website and consists of three databases. One of these databases was used to train the machine learning models.
 
-##  Preprocessing data
-In the data cleaning process, I removed the Stop Words and Punkstuctions and calculated the number of words before and after clean, Then I performed Steming and Lemmatization operations
+##  🧹 Data Preprocessing
+-The preprocessing pipeline involved:
+-Removing stop words and punctuations
+-Calculating the word count before and after cleaning
+-Applying stemming and lemmatization techniques to normalize the text
 
-##  preparing data for ML models
-I used TF-DECTORIZATION to represent the Data to be ready to enter the model, and then train data on Logistic Regional Model
+##  ⚙️ Data Preparation for Machine Learning
+To convert text into numerical features, I used TF-IDF vectorization. The data was then used to train a Logistic Regression model for initial predictions.
 
-## 🧨 Train LSTM model
-I built the LSTM model and selected the appropriate HyperParameter for the database for the best possible result
+## 🧠 LSTM Model Training
+An LSTM (Long Short-Term Memory) neural network was built and fine-tuned using appropriate hyperparameters to improve prediction accuracy on the dataset.
 
-## testing using postman
-I tried the model on postman and gave the results (False, True) according to the tweet content
+## 🧪 Model Testing via Postman
+The final model was tested using Postman, which returned binary predictions (True or False) based on the authenticity of the tweet content.
+
