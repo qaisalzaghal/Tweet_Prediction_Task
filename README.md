@@ -22,20 +22,32 @@ The dataset contains 64 columns in total, but only 3 columns were selected for t
 This section outlines the key steps followed throughout the project, from data acquisition to model testing:
 
 ##  1. 📥 Data Collection
-The data was sourced from the [Canadian Institute](https://www.unb.ca/cic/datasets/truthseeker-2023.html) website and consists of three databases. One of these databases was used to train the machine learning models.
+- Collected the dataset from the [Canadian Institute](https://www.unb.ca/cic/datasets/truthseeker-2023.html) website.
+
+- Selected one of the three available datasets for training.
+
+- Focused on three important columns: statement, tweet, and majority_target.
 
 ##  2. 🧹 Data Preprocessing
-* The preprocessing pipeline involved:
 * Removing stop words and punctuations
 * Calculating the word count before and after cleaning
 * Applying stemming and lemmatization techniques to normalize the text
 
-##  ⚙️ Data Preparation for Machine Learning
-To convert text into numerical features, I used TF-IDF vectorization. The data was then used to train a Logistic Regression model for initial predictions.
+##  3.⚙️ Data Preparation for Machine Learning
+- Used TF-IDF Vectorization to convert textual data into numerical format.
 
-## 🧠 LSTM Model Training
-An LSTM (Long Short-Term Memory) neural network was built and fine-tuned using appropriate hyperparameters to improve prediction accuracy on the dataset.
+- Prepared the features to be fed into machine learning models.
 
-## 🧪 Model Testing via Postman
-The final model was tested using Postman, which returned binary predictions (True or False) based on the authenticity of the tweet content.
+- Trained a Logistic Regression model as a baseline.
 
+## 4.🧠 LSTM Model Training
+- Built an LSTM (Long Short-Term Memory) neural network to improve performance.
+
+- Tuned hyperparameters to optimize the LSTM model.
+
+## 5.🧪 Model Testing via Postman
+- Deployed the trained model and tested it using Postman.
+
+- Input: Tweet text
+
+- Output: Binary result — True (real) or False (fake)
