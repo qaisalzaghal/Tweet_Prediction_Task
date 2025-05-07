@@ -63,16 +63,3 @@ Max Word - length of the longest word in the sentence.
 Min Word - length of the shortest word in the sentence.
 Avg Word Length - average length of words in the sentence.
 
-
----Truth_Seeker_Model_Dataset.csv---
-
-author - The author of the statement.
-statement - Headline of a new article.
-target - the groundtruth value of the statement.
-BinaryNumTarget - Binary representation of the target value (1 = True / 0 = False).
-manual_keywords - manually created keywords used to search twitter with.
-tweet - twitter posts related to the associated manual keywords
-5_label_majority_answer - majority answer using 5 labels (Agree, Mostly Agree, Disagree, Mostly Disagree, Unrelated)
-3_label_majority_answer - majority answer using 3 labels (Agree, Disagree, Unrelated)
-
-*NO MAJORITY indicates that there was no consensus when a majority answer was generated
