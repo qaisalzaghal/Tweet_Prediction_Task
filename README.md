@@ -2,20 +2,24 @@
 This project focuses on building a robust fake news detection system by leveraging social media content. It introduces the TruthSeeker dataset, which aims to be one of the most comprehensive ground truth datasets for identifying real and fake news in social media posts.
 
 ##  📊 Dataset Information
-The dataset consists of three main components, with the primary one used for model training. Each record in the dataset includes:
+The dataset contains 64 columns in total, but only 3 columns were selected for this task:
+- statement: Headline of a new article
 
-- Tweet ID: A unique identifier for each tweet
+- tweet: twitter posts related to the associated manual keywords
 
-- Content: The full text of the tweet or post
-
-- Label: Ground truth label (1 for real, 0 for fake)
+- majority_target: Ground truth label (True, False)
 
 ## Dataset Size
-Total Entries: ~10,000 posts
++ Total Size : 78.5 MB
 
-Real News Samples: ~5,000
++ Total Entries: ~134,197 posts
 
-Fake News Samples: ~5,000
++ Real News Samples: ~68,985
+
++ Fake News Samples: ~65,213
+
+# 🔧 Work Steps
+This section outlines the key steps followed throughout the project, from data acquisition to model testing:
 
 ##  1. 📥 Data Collection
 The data was sourced from the [Canadian Institute](https://www.unb.ca/cic/datasets/truthseeker-2023.html) website and consists of three databases. One of these databases was used to train the machine learning models.
