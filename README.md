@@ -2,7 +2,7 @@
 This project focuses on building a robust fake news detection system by leveraging social media content. It introduces the TruthSeeker dataset, which aims to be one of the most comprehensive ground truth datasets for identifying real and fake news in social media posts.
 
 ##  📥 Data Collection
-The data was sourced from the [https://www.unb.ca/cic/datasets/truthseeker-2023.html](Canadian Institute) website and consists of three databases. One of these databases was used to train the machine learning models.
+The data was sourced from the [Canadian Institute](https://www.unb.ca/cic/datasets/truthseeker-2023.html) website and consists of three databases. One of these databases was used to train the machine learning models.
 
 ##  🧹 Data Preprocessing
 -The preprocessing pipeline involved:
